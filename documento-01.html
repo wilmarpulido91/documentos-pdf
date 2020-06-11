@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Informe de progreso</title>
+    <style>
+        /* Base */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial';
+            background-color: #ccc;
+        }
+        h2 {
+            margin: 0 0 3px;
+            font-size: 18px;
+            font-weight: 600;
+            text-align: center;
+        }
+        span {
+            display: block;
+            font-weight: 600;
+            text-align: center;
+        }
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        tr {
+            width: 100%;
+        }
+        td {
+            font-size: 11px;
+            padding: 2px 3px;
+        }
+
+        /* Helpers */
+        .center {
+            text-align: center;
+        }
+        .bold {
+            font-weight: 600;
+        }
+        .bg-gray {
+            background-color: #ddd;
+        }
+        .bg-yellow {
+            background-color: yellow;
+        }
+        .bg-blue {
+            background-color: blue;
+        }
+        .bg-red {
+            background-color: red;
+        }
+
+        /* Classes */
+        .title {
+            margin-bottom: 20px;
+        }
+        .content-pdf {
+            height: auto;
+            width: 100%;
+            margin: 0 auto;
+            background-color: #fff;
+        }
+        .page {
+            width: 100%;
+            height: 842px;
+        }
+
+        /* Para tablas */
+        .content-table {
+            width: 100%;
+        }
+        .content-table table {
+            width: 100%;
+            background-color: #fff;
+        }
+
+        /* Para rotar */
+        .rotate-content {
+            display: flex;
+            position: relative;
+            justify-content: center;
+        }
+        .rotate-content .rotate {
+            top: 0;
+            left: 0;
+            position: absolute;
+        }
+        .rotate-content .rotate .rotate-270 {
+            transform: rotate(270deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="content-pdf">
+        <div class="page">
+            <div class="title">
+                <h2>INFORME DE PROGRESO DE LAS COMPETENCIAS DEL ESTUDIANTE</h2>
+                <span>(Ciclo II: Educación Inicial)</span>
+            </div>
+            <div class="content-table">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="center bold bg-gray" style="width: 130px;">DRE</td>
+                            <td class="center bold" style="width: 106px;">Lima Metropolitana</td>
+                            <td class="center bold bg-gray">UGEL</td>
+                            <td class="center bold" style="width: 50px;">01</td>
+                            <td rowspan="7" class="center bold" style="width: 130px;">Pegar insignia del colegio</td>
+                        </tr>
+                        <tr>
+                            <td class="bold bg-gray">Nivel</td>
+                            <td class="bold">Educación Inicial</td>
+                            <td class="bold bg-gray">Código Modular</td>
+                            <td class="bold"></td>
+                        </tr>
+                        <tr>
+                            <td class="bold bg-gray">IE</td>
+                            <td class="bold">“Exphadis”</td>
+                            <td class="bold bg-gray"></td>
+                            <td class="bold"></td>
+                        </tr>
+                        <tr>
+                            <td class="bold bg-gray">Edad</td>
+                            <td class="bold"></td>
+                            <td class="bold bg-gray">Sección</td>
+                            <td class="bold"></td>
+                        </tr>
+                        <tr>
+                            <td class="bold bg-gray">Apellidos y nombres del estudiante</td>
+                            <td class="bold"></td>
+                            <td class="bold bg-gray">Observaciones</td>
+                            <td class="bold"></td>
+                        </tr>
+                        <tr>
+                            <td class="bold bg-gray">Código del estudiante/ DNI</td>
+                            <td class="bold"></td>
+                            <td class="bold bg-gray"></td>
+                            <td class="bold"></td>
+                        </tr>
+                        <tr>
+                            <td class="bold bg-gray">Apellidos y nombre del docente</td>
+                            <td class="bold"></td>
+                            <td class="bold bg-gray"></td>
+                            <td class="bold"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="page">
+            Pagina 2
+        </div>
+        <div class="page">
+            Pagina 3
+        </div>
+    </div>
+</body>
+</html>
