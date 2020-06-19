@@ -1,3 +1,5 @@
 # Unnecessary files
-
 /documentos
+
+# IDEs and editors
+*.code-workspace
