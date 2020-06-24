@@ -21,8 +21,7 @@
         }
         span {
             display: block;
-            font-weight: 600;
-            text-align: center;
+            font-size: 12px;
         }
         table,
         th,
@@ -60,6 +59,9 @@
         .mt-20 {
             margin-top: 20px;
         }
+        .mt-40 {
+            margin-top: 40px;
+        }
 
         /* Classes */
         .title {
@@ -85,9 +87,20 @@
             background-color: #fff;
         }
 
-        /* Para rotar */
-        .rotate-270 {
-            transform: rotate(270deg);
+        /* Para la firma */
+        .content-firma {
+            width: 30%;
+            margin: 100px auto 0;
+        }
+        .firma {
+            width: 100%;
+            border-bottom: 1px solid #000;
+        }
+        .label-firma {
+            font-size: 14px;
+            margin-top: 4px;
+            font-weight: bold;
+            text-align: center;
         }
     </style>
 </head>
@@ -96,16 +109,16 @@
         <div class="page">
             <div class="title">
                 <h2>INFORME DE PROGRESO DE LAS COMPETENCIAS DEL ESTUDIANTE</h2>
-                <span>(Ciclo II: Educación Inicial)</span>
+                <span class="center bold" style="font-size: 16px;">(Ciclo II: Educación Inicial)</span>
             </div>
             <div class="content-table">
                 <table>
                     <tbody>
                         <tr>
-                            <td class="center bold bg-gray" style="width: 130px;">DRE</td>
-                            <td class="center bold" style="width: 106px;">Lima Metropolitana</td>
-                            <td class="center bold bg-gray">UGEL</td>
-                            <td class="center bold" style="width: 50px;">01</td>
+                            <td class="center bold bg-gray" style="width: 160px;">DRE</td>
+                            <td class="center bold">Lima Metropolitana</td>
+                            <td class="center bold bg-gray" style="width: 130px;">UGEL</td>
+                            <td class="center bold" style="width: 80px;">01</td>
                             <td rowspan="7" class="center bold" style="width: 130px;">Pegar insignia del colegio</td>
                         </tr>
                         <tr>
@@ -151,39 +164,27 @@
                 <table>
                     <tbody>
                         <tr>
-                            <td rowspan="2" class="center bold rotate-270" style="height: 110px;">Área curricular</td>
-                            <td rowspan="2" class="center bold rotate-270">Competencia</td>
-                            <td colspan="2" class="center bold">Período 1</td>
-                            <td colspan="2" class="center bold">Período 2</td>
-                            <td colspan="2" class="center bold">Período 3</td>
-                            <td colspan="2" class="center bold">Período 4</td>
-                            <td rowspan="2" class="center bold">Nivel de logro alcanzado al finalizar el período lectivo</td>
+                            <td rowspan="2" class="center bold bg-gray" style="width: 106px; height: 110px;">Área curricular</td>
+                            <td rowspan="2" class="center bold bg-gray" style="width: 140px">Competencia</td>
+                            <td colspan="2" class="center bold bg-gray">Período 1</td>
+                            <td colspan="2" class="center bold bg-gray">Período 2</td>
+                            <td colspan="2" class="center bold bg-gray">Período 3</td>
+                            <td colspan="2" class="center bold bg-gray">Período 4</td>
+                            <td rowspan="2" class="center bold bg-gray" style="width: 160px;">Nivel de logro alcanzado al finalizar el período lectivo</td>
                         </tr>
                         <tr>
-                            <td class="center">Nivel de logro</td>
-                            <td class="center bold">Conclusión descriptiva</td>
-                            <td class="center">Nivel de logro</td>
-                            <td class="center bold">Conclusión descriptiva</td>
-                            <td class="center">Nivel de logro</td>
-                            <td class="center bold">Conclusión descriptiva</td>
-                            <td class="center">Nivel de logro</td>
-                            <td class="center bold">Conclusión descriptiva</td>
+                            <td class="center bg-gray">Nivel de logro</td>
+                            <td class="center bold bg-gray" style="width: 60px;">Conclusión descriptiva</td>
+                            <td class="center bg-gray">Nivel de logro</td>
+                            <td class="center bold bg-gray" style="width: 60px;">Conclusión descriptiva</td>
+                            <td class="center bg-gray">Nivel de logro</td>
+                            <td class="center bold bg-gray" style="width: 60px;">Conclusión descriptiva</td>
+                            <td class="center bg-gray">Nivel de logro</td>
+                            <td class="center bold bg-gray" style="width: 60px;">Conclusión descriptiva</td>
                         </tr>
                         <tr>
-                            <td rowspan="3" class="center bold rotate-270" style="height: 200px;">Personal Social</td>
-                            <td class="center bold rotate-270" style="height: 80px;">Construye su<br> identidad</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td class="center bold rotate-270" style="height: 120px;">Convive y participa<br> democráticamente<br> en la búsqueda del<br> bien común</td>
+                            <td rowspan="3" class="center bold">Personal Social</td>
+                            <td class="center" style="height: 90px;">Construye su<br> identidad</td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -195,7 +196,7 @@
                             <td></td>
                         </tr>
                         <tr>
-                            <td class="center bold rotate-270" style="width: 140px; height: 140px;">Construye su identidad<br> como persona humana<br> amada por Dios digna,<br> libre y trascendente</span></td>
+                            <td class="center" style="height: 90px;">Convive y participa<br> democráticamente<br> en la búsqueda del<br> bien común</td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -207,8 +208,7 @@
                             <td></td>
                         </tr>
                         <tr>
-                            <td class="center bold rotate-270" style="height: 100px;">Psicomotricidad</td>
-                            <td class="center bold rotate-270" style="width: 150px; height: 150px;">Se desenvuelve de manera<br> autónoma a través de su<br> motricidad</td>
+                            <td class="center" style="height: 90px;">Construye su identidad<br> como persona humana<br> amada por Dios digna,<br> libre y trascendente</span></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -220,8 +220,8 @@
                             <td></td>
                         </tr>
                         <tr>
-                            <td rowspan="2" class="center bold rotate-270" style="height: 140px;">Comunicación en lengua materna</td>
-                            <td class="center bold rotate-270" style="height: 90px;">Se comunica<br> oralmente</td>
+                            <td class="center bold" style="height: 90px;">Psicomotricidad</td>
+                            <td class="center" style="height: 90px;">Se desenvuelve de manera<br> autónoma a través de su<br> motricidad</td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -233,7 +233,20 @@
                             <td></td>
                         </tr>
                         <tr>
-                            <td class="center bold rotate-270" style="height: 110px;">Lee diversos tipos<br> de texto escritos</td>
+                            <td rowspan="2" class="center bold" style="height: 140px;">Comunicación en lengua materna</td>
+                            <td class="center" style="height: 100px;">Se comunica<br> oralmente</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="center" style="height: 100px;">Lee diversos tipos<br> de texto escritos</td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -249,10 +262,211 @@
             </div>
         </div>
         <div class="page">
-            Pagina 2
+            <div class="content-table">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2" class="center bold" style="width:106px; height: 140px;">Comunicación en lengua materna (*)</td>
+                            <td class="center" style="width: 140px; height: 100px;">Escribe diversos tipos de<br> textos</td>
+                            <td></td>
+                            <td style="width: 60px;"></td>
+                            <td></td>
+                            <td style="width: 60px;"></td>
+                            <td></td>
+                            <td style="width: 60px;"></td>
+                            <td></td>
+                            <td style="width: 60px;"></td>
+                            <td style="width: 160px;"></td>
+                        </tr>
+                        <tr>
+                            <td class="center" style="height: 100px;">Crea proyectos desde<br> lenguajes artísticos</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="center bold" style="height: 90px;">Comunicación en segunda lengua (**)</td>
+                            <td class="center" style="height: 90px;">Se comunica oralmente</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2" class="center bold" style="width:106px; height: 140px;">Matemática</td>
+                            <td class="center" style="width: 140px; height: 100px;">Resuelve problemas<br> de cantidad</td>
+                            <td></td>
+                            <td style="width: 60px;"></td>
+                            <td></td>
+                            <td style="width: 60px;"></td>
+                            <td></td>
+                            <td style="width: 60px;"></td>
+                            <td></td>
+                            <td style="width: 60px;"></td>
+                            <td style="width: 160px;"></td>
+                        </tr>
+                        <tr>
+                            <td class="center" style="height: 100px;">Resuelve problemas<br> de forma,<br> movimiento y<br> localización</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="center bold" style="height: 90px;">Ciencia y Tecnología</td>
+                            <td class="center" style="height: 90px;">Indaga mediante métodos científicos para construir sus conocimientos</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="content-table mt-20">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2" class="center bold bg-gray" style="width: 140px; height: 100px;">Competencias transversales (***)</td>
+                            <td colspan="2" class="center bold bg-gray">Período 1</td>
+                            <td colspan="2" class="center bold bg-gray">Período 2</td>
+                            <td colspan="2" class="center bold bg-gray">Período 3</td>
+                            <td colspan="2" class="center bold bg-gray">Período 4</td>
+                            <td rowspan="2" class="center bold bg-gray" style="width: 160px;">Nivel de logro alcanzado al finalizar el período lectivo</td>
+                        </tr>
+                        <tr>
+                            <td class="center bg-gray">Nivel de logro</td>
+                            <td class="center bold bg-gray" style="width: 60px;">Conclusión descriptiva</td>
+                            <td class="center bg-gray">Nivel de logro</td>
+                            <td class="center bold bg-gray" style="width: 60px;">Conclusión descriptiva</td>
+                            <td class="center bg-gray">Nivel de logro</td>
+                            <td class="center bold bg-gray" style="width: 60px;">Conclusión descriptiva</td>
+                            <td class="center bg-gray">Nivel de logro</td>
+                            <td class="center bold bg-gray" style="width: 60px;">Conclusión descriptiva</td>
+                        </tr>
+                        <tr>
+                            <td class="center" style="height: 90px;">Gestiona su<br> aprendizaje de<br> manera autónoma</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="center" style="height: 90px;">Se desenvuelve en<br> los entornos<br> virtuales generados<br> por las TIC</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="mt-20">
+                <div style="display: flex;">
+                    <span style="width: 20px">*</span>
+                    <span>En el espacio en blanco se registra la lengua materna de los estudiantes (castellano)</span>
+                </div>
+                <div style="display: flex;">
+                    <span style="width: 20px">**</span>
+                    <span>En el espacio en blanco se registra la segunda lengua de los estudiantes</span>
+                </div>
+                <div style="display: flex;">
+                    <span style="width: 20px">***</span>
+                    <span>Solo para los niños de 5 años.</span>
+                </div>
+            </div>
         </div>
         <div class="page">
-            Pagina 3
+            <div class="title">
+                <h2>Resumen de asistencia del niño o la niña</h2>
+            </div>
+            <div class="content-table mt-20">
+                <table style="width: 80%; margin: 0 auto;">
+                    <tbody>
+                        <tr>
+                            <td rowspan="2" class="center bold bg-gray" style="font-size: 14px;">Periodo</td>
+                            <td colspan="2" class="center bold bg-gray" style="font-size: 14px;">Inasistencia</td>
+                            <td colspan="2" class="center bold bg-gray" style="font-size: 14px;">Tardanza</td>
+                        </tr>
+                        <tr>
+                            <td class="center bold bg-gray" style="font-size: 14px;">Justificadas</td>
+                            <td class="center bold bg-gray" style="font-size: 14px;">Injustificadas</td>
+                            <td class="center bold bg-gray" style="font-size: 14px;">Justificadas</td>
+                            <td class="center bold bg-gray" style="font-size: 14px;">Injustificadas</td>
+                        </tr>
+                        <tr>
+                            <td class="center bold" style="font-size: 14px;">1</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="center bold" style="font-size: 14px;">2</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="center bold" style="font-size: 14px;">3</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="content-table mt-20">
+                <table style="width: 80%; margin: 0 auto;">
+                    <tbody>
+                        <tr>
+                            <td class="center" style="width: 50%; height: 150px; font-size: 24px;">Situación al finalizar el año lectivo</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="content-firma">
+                <div class="firma"></div>
+                <span class="label-firma">Firma del Docente o tutor/a</span>
+            </div>
+            <div class="content-firma">
+                <div class="firma"></div>
+                <span class="label-firma">Firma y sello de la directora</span>
+            </div>
         </div>
     </div>
 </body>
