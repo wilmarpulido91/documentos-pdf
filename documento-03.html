@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Informe de progreso</title>
+  <style>
+    /* Base */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial';
+      background-color: #ccc;
+    }
+    header {
+      position: relative;
+    }
+    h2 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 600;
+      text-align: center;
+    }
+    h4 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    p {
+      margin: 0;
+      font-size: 14px;
+    }
+    span {
+      display: block;
+      font-size: 12px;
+    }
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    tr {
+      width: 100%;
+    }
+    td {
+      font-size: 12px;
+      padding: 2px 3px;
+    }
+    hr {
+      margin: 1px 0;
+    }
+    ul {
+      padding: 0;
+      font-size: 12px;
+      list-style: none;
+      margin: 0 20px 0 0;
+    }
+    ul li {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+    ul li .label {
+      width: 120px;
+      max-width: 120px;
+    }
+    ul li .data {
+      margin-left: 10px;
+    }
+
+    /* Helpers */
+    .d-flex {
+      display: flex;
+    }
+    .center {
+      text-align: center;
+    }
+    .bold {
+      font-weight: 600;
+    }
+    .bg-gray {
+      background-color: #ddd;
+    }
+    .mt-10 {
+      margin-top: 10px;
+    }
+    .mt-20 {
+      margin-top: 20px;
+    }
+    .mt-30 {
+      margin-top: 30px;
+    }
+    .mt-40 {
+      margin-top: 40px;
+    }
+    .mb-30 {
+      margin-bottom: 30px;
+    }
+
+    /* Classes */
+    .title {
+      width: 100%;
+      height: 100%;
+      margin: 30px auto;
+    }
+    .content-pdf {
+      height: auto;
+      width: 100%;
+      margin: 0 auto;
+      background-color: #fff;
+    }
+    .content-img {
+      top: 0;
+      left: 0;
+      width: 20%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+    }
+    .content-codigo {
+      height: 100%;
+      width: 100%;
+    }
+    .content-codigo div {
+      flex: 1;
+      width: 12px;
+    }
+    .content-codigo div.dotted:not(:last-child) {
+      border-right: 1px dotted black;
+    }
+    .content-codigo div.solid:not(:last-child) {
+      border-right: 1px solid black;
+    }
+    .content-info {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+    .content-info .info {
+      display: flex;
+    }
+    .content-info .table {
+      flex: 1;
+    }
+    .page {
+      width: 100%;
+    }
+
+    /* Para tablas */
+    .content-table {
+      width: 100%;
+    }
+    .content-table table {
+      width: 100%;
+      background-color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="content-pdf">
+    <div class="page">
+      <header class="d-flex">
+        <div class="content-img">
+          <img src="img/escudo-peru.png" width="80px" alt="peru-logo">
+        </div>
+        <div class="title">
+          <h2>ACTA CONSOLIDADA DE EVALUACIÓN INTEGRAL DEL<br> NIVEL DE EDUCACIÓN SECUNDARIA EBR - 2016</h2>
+          <span style="margin-top: 5px; margin-left: 50%;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt nihil voluptas explicabo nobis fuga voluptate numquam quia laudantium.</span>
+        </div>
+      </header>
+      <div class="content-table mt-10">
+        <table>
+          <tbody>
+            <tr>
+              <td class="center bold bg-gray" colspan="2" rowspan="2">Datos de la Instancia de Gestión Educativa Desentralizada (UGEL) (*)</td>
+              <td class="center bold bg-gray" colspan="6">Datos de la Institucion Educativa o Programa educativo</td>
+              <td class="center bold bg-gray" colspan="5">Periodo lectivo</td>
+              <td class="center bold bg-gray">Inicio</td>
+              <td colspan="5">01/03/2016</td>
+              <td class="center bold bg-gray">Fin</td>
+              <td colspan="9">30/12/2016</td>
+              <td class="center bold bg-gray" colspan="4">Ubicación Geografica</td>
+            </tr>
+            <tr>
+              <td class="center bold bg-gray">Numero y/o Nombre</td>
+              <td colspan="5">Nombre del colegio</td>
+              <td class="center bold bg-gray" colspan="18">Areas y Talleres Curriculares</td>
+              <td class="center bold bg-gray" rowspan="13">Comportamiento</td>
+              <td class="center bold bg-gray" rowspan="13">Situacion Final (9)</td>
+              <td class="center bold bg-gray" rowspan="13">Motivo de retiro (10)</td>
+              <td class="center bold bg-gray">Dpto.</td>
+              <td colspan="3">Lima</td>
+            </tr>
+            <tr>
+              <td class="center bold bg-gray">Código</td>
+              <td style="padding: 0;">
+                <div class="d-flex content-codigo">
+                  <div class="center dotted">1</div>
+                  <div class="center dotted">5</div>
+                  <div class="center dotted">0</div>
+                  <div class="center dotted">1</div>
+                  <div class="center dotted">0</div>
+                  <div class="center dotted">2</div>
+                </div>
+              </td>
+              <td class="center bold bg-gray">Código Modular</td>
+              <td colspan="3" style="padding: 0;">
+                <div class="d-flex content-codigo">
+                  <div class="center dotted">1</div>
+                  <div class="center dotted">5</div>
+                  <div class="center dotted">0</div>
+                  <div class="center dotted">1</div>
+                  <div class="center dotted">0</div>
+                  <div class="center dotted">2</div>
+                  <div class="center dotted">2</div>
+                </div>
+              </td>
+              <td class="center bold bg-gray" colspan="2" style="width: 70px;"></td>
+              <td class="center bold bg-gray" colspan="12">Areas</td>
+              <td class="center bold bg-gray" colspan="4">Talleres</td>
+              <td class="center bold bg-gray" colspan="2" rowspan="12">N° Areas / Talleres Desaprobados (0)</td>
+              <td class="center bold bg-gray">Prov.</td>
+              <td colspan="3">Lima</td>
+            </tr>
+            <tr>
+              <td class="center bold bg-gray" rowspan="3">Nombre de UGEL</td>
+              <td rowspan="3">UGEL 01 San Juan de Miraflores</td>
+              <td class="center bold bg-gray">Resolución de creación N°</td>
+              <td colspan="3">R.D N° 0283746</td>
+              <td class="center bold bg-gray" colspan="2" style="width: 70px;"></td>
+              <td class="center" rowspan="10">Matematicas</td>
+              <td class="center" rowspan="10">Comunicación</td>
+              <td class="center" rowspan="10">Ingles</td>
+              <td class="center" rowspan="10">Arte</td>
+              <td class="center" rowspan="10">Historia, <br>Geografia y <br>Economia</td>
+              <td class="center" rowspan="10">Formación ciudadana y civica</td>
+              <td class="center" rowspan="10">Persona, famili y Relaciones Humanas</td>
+              <td class="center" rowspan="10">Educación Fisica</td>
+              <td class="center" rowspan="10">Educación Religiosa</td>
+              <td class="center" rowspan="10">Ciencia, Tecnologia y Ambiente</td>
+              <td class="center" rowspan="10">Educación para el trabajo</td>
+              <td class="center" rowspan="10">Especialidad Ocupacional(15)</td>
+              <td class="center" rowspan="10"></td>
+              <td class="center" rowspan="10"></td>
+              <td class="center" rowspan="10"></td>
+              <td class="center" rowspan="10"></td>
+              <td class="center bold bg-gray">Dist.</td>
+              <td colspan="3">Villa Maria del Triunfo</td>
+            </tr>
+            <tr>
+              <td class="center bold bg-gray">Modalidad</td>
+              <td>EDR</td>
+              <td class="center bold bg-gray">Grado</td>
+              <td>1</td>
+              <td class="center bold bg-gray">Sección</td>
+              <td>-</td>
+              <td class="center bold bg-gray" colspan="4">Centro Poblado</td>
+            </tr>
+            <tr>
+              <td class="center bold bg-gray">Gestion</td>
+              <td>PR</td>
+              <td class="center bold bg-gray" colspan="2"></td>
+              <td class="center bold bg-gray">Turno</td>
+              <td>M</td>
+              <td class="center" colspan="4">Villa Maria del Triunfo</td>
+            </tr>
+            <tr>
+              <td class="center bold bg-gray" rowspan="8">N° Orden</td>
+              <td class="center bold bg-gray" rowspan="8">DNI / Código del Estudiante(2)</td>
+              <td class="center bold bg-gray" colspan="5" rowspan="8">Apellidos y Nombres (Orden Alfabetico)</td>
+              <td class="center bold bg-gray" rowspan="8">Sexo H / M</td>
+              <td class="center bold bg-gray" rowspan="7">Evaluacion (Marcar X)</td>
+              <td class="center bold bg-gray" colspan="2">Final</td>
+              <td>X</td>
+            </tr>
+            <tr>
+              <td class="center bold bg-gray" colspan="2">Recuperación</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="center bold bg-gray" colspan="2">Adelanto</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="center bold bg-gray" colspan="2">Postergación</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="center bold bg-gray" colspan="2">Ubicación</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="center bold bg-gray" colspan="2">Est. Independ</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="center bold bg-gray">Otra</td>
+              <td style="width: 45px;"></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="center bold bg-gray" rowspan="1">A</td>
+              <td class="center bold bg-gray" rowspan="1">B</td>
+              <td class="center bold bg-gray" rowspan="1">C</td>
+              <td class="center bold bg-gray" rowspan="1">D</td>
+              <td class="center bold bg-gray" rowspan="1">E</td>
+              <td class="center bold bg-gray" rowspan="1">F</td>
+              <td class="center bold bg-gray" rowspan="1">G</td>
+              <td class="center bold bg-gray" rowspan="1">H</td>
+              <td class="center bold bg-gray" rowspan="1">I</td>
+              <td class="center bold bg-gray" rowspan="1">J</td>
+              <td class="center bold bg-gray" rowspan="1">K</td>
+              <td class="center bold bg-gray" rowspan="1">L</td>
+              <td class="center bold bg-gray" rowspan="1">M</td>
+              <td class="center bold bg-gray" rowspan="1">N</td>
+              <td class="center bold bg-gray" rowspan="1">O</td>
+              <td class="center bold bg-gray" rowspan="1">P</td>
+              <td class="center bold bg-gray" colspan="4">Observaciones</td>
+            </tr>
+            <tr>
+              <td class="center bold bg-gray">1</td>
+              <td style="padding: 0;">
+                <div class="d-flex content-codigo">
+                  <div class="center solid">D</div>
+                  <div class="center solid">N</div>
+                  <div class="center solid">I</div>
+                  <div class="center solid"></div>
+                  <div class="center solid"></div>
+                  <div class="center solid"></div>
+                  <div class="center solid">7</div>
+                  <div class="center solid">7</div>
+                  <div class="center solid">6</div>
+                  <div class="center solid">6</div>
+                  <div class="center solid">5</div>
+                  <div class="center solid">1</div>
+                  <div class="center solid">0</div>
+                  <div class="center solid">2</div>
+                </div>
+              </td>
+              <td colspan="5">Guitierrez, Walbert</td>
+              <td class="center">H</td>
+              <td class="center">10</td>
+              <td class="center">10</td>
+              <td class="center">10</td>
+              <td class="center">10</td>
+              <td class="center">10</td>
+              <td class="center">10</td>
+              <td class="center">10</td>
+              <td class="center">10</td>
+              <td class="center">10</td>
+              <td class="center">14</td>
+              <td class="center">20</td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center" colspan="2">0</td>
+              <td class="center">A</td>
+              <td class="center">A</td>
+              <td class="center"></td>
+              <td class="center" colspan="4"></td>
+            </tr>
+            <tr>
+              <td class="center bold bg-gray">2</td>
+              <td style="padding: 0;">
+                <div class="d-flex content-codigo">
+                  <div class="center solid">D</div>
+                  <div class="center solid">N</div>
+                  <div class="center solid">I</div>
+                  <div class="center solid"></div>
+                  <div class="center solid"></div>
+                  <div class="center solid"></div>
+                  <div class="center solid">6</div>
+                  <div class="center solid">1</div>
+                  <div class="center solid">2</div>
+                  <div class="center solid">6</div>
+                  <div class="center solid">9</div>
+                  <div class="center solid">2</div>
+                  <div class="center solid">3</div>
+                  <div class="center solid">4</div>
+                </div>
+              </td>
+              <td colspan="5">CARBAJAL MEDINA, Nayely Mayori</td>
+              <td class="center">M</td>
+              <td colspan="16" class="center">RETIRADO</td>
+              <td class="center" colspan="2"></td>
+              <td class="center"></td>
+              <td class="center">R</td>
+              <td class="center">EN</td>
+              <td class="center" colspan="4">01-2016-15/06/2016</td>
+            </tr>
+            <tr>
+              <td class="center bold bg-gray">3</td>
+              <td style="padding: 0;">
+                <div class="d-flex content-codigo">
+                  <div class="center solid">D</div>
+                  <div class="center solid">N</div>
+                  <div class="center solid">I</div>
+                  <div class="center solid"></div>
+                  <div class="center solid"></div>
+                  <div class="center solid"></div>
+                  <div class="center solid">6</div>
+                  <div class="center solid">2</div>
+                  <div class="center solid">3</div>
+                  <div class="center solid">3</div>
+                  <div class="center solid">3</div>
+                  <div class="center solid">9</div>
+                  <div class="center solid">7</div>
+                  <div class="center solid">0</div>
+                </div>
+              </td>
+              <td colspan="5">CHIRRI JULCA, Pablo Sebastian</td>
+              <td class="center">H</td>
+              <td class="center">13</td>
+              <td class="center">13</td>
+              <td class="center">15</td>
+              <td class="center">12</td>
+              <td class="center">16</td>
+              <td class="center">14</td>
+              <td class="center">17</td>
+              <td class="center">18</td>
+              <td class="center">14</td>
+              <td class="center">14</td>
+              <td class="center">20</td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center" colspan="2">0</td>
+              <td class="center">A</td>
+              <td class="center">A</td>
+              <td class="center"></td>
+              <td class="center" colspan="4"></td>
+            </tr>
+            <tr>
+              <td class="center bold bg-gray">4</td>
+              <td style="padding: 0;">
+                <div class="d-flex content-codigo">
+                  <div class="center solid">D</div>
+                  <div class="center solid">N</div>
+                  <div class="center solid">I</div>
+                  <div class="center solid"></div>
+                  <div class="center solid"></div>
+                  <div class="center solid"></div>
+                  <div class="center solid">6</div>
+                  <div class="center solid">2</div>
+                  <div class="center solid">3</div>
+                  <div class="center solid">3</div>
+                  <div class="center solid">3</div>
+                  <div class="center solid">9</div>
+                  <div class="center solid">7</div>
+                  <div class="center solid">0</div>
+                </div>
+              </td>
+              <td colspan="5">CHIRRI JULCA, Pablo Sebastian</td>
+              <td class="center">H</td>
+              <td class="center">13</td>
+              <td class="center">13</td>
+              <td class="center">15</td>
+              <td class="center">12</td>
+              <td class="center">16</td>
+              <td class="center">14</td>
+              <td class="center">17</td>
+              <td class="center">18</td>
+              <td class="center">14</td>
+              <td class="center">14</td>
+              <td class="center">20</td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center" colspan="2">0</td>
+              <td class="center">A</td>
+              <td class="center">A</td>
+              <td class="center"></td>
+              <td class="center" colspan="4"></td>
+            </tr>
+            <tr>
+              <td class="center bold bg-gray">5</td>
+              <td style="padding: 0;">
+                <div class="d-flex content-codigo">
+                  <div class="center solid">D</div>
+                  <div class="center solid">N</div>
+                  <div class="center solid">I</div>
+                  <div class="center solid"></div>
+                  <div class="center solid"></div>
+                  <div class="center solid"></div>
+                  <div class="center solid">6</div>
+                  <div class="center solid">2</div>
+                  <div class="center solid">3</div>
+                  <div class="center solid">3</div>
+                  <div class="center solid">3</div>
+                  <div class="center solid">9</div>
+                  <div class="center solid">7</div>
+                  <div class="center solid">0</div>
+                </div>
+              </td>
+              <td colspan="5">CHIRRI JULCA, Pablo Sebastian</td>
+              <td class="center">H</td>
+              <td colspan="16" class="center">TRASLADADO</td>
+              <td class="center" colspan="2"></td>
+              <td class="center"></td>
+              <td class="center">T</td>
+              <td class="center"></td>
+              <td class="center" colspan="4">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
+            </tr>
+            <tr>
+              <td class="center bold bg-gray">6</td>
+              <td style="padding: 0;">
+                <div class="d-flex content-codigo">
+                  <div class="center solid">D</div>
+                  <div class="center solid">N</div>
+                  <div class="center solid">I</div>
+                  <div class="center solid"></div>
+                  <div class="center solid"></div>
+                  <div class="center solid"></div>
+                  <div class="center solid">6</div>
+                  <div class="center solid">2</div>
+                  <div class="center solid">3</div>
+                  <div class="center solid">3</div>
+                  <div class="center solid">3</div>
+                  <div class="center solid">9</div>
+                  <div class="center solid">7</div>
+                  <div class="center solid">0</div>
+                </div>
+              </td>
+              <td colspan="5">CHIRRI JULCA, Pablo Sebastian</td>
+              <td class="center">H</td>
+              <td class="center">13</td>
+              <td class="center">13</td>
+              <td class="center">15</td>
+              <td class="center">12</td>
+              <td class="center">16</td>
+              <td class="center">14</td>
+              <td class="center">17</td>
+              <td class="center">18</td>
+              <td class="center">14</td>
+              <td class="center">14</td>
+              <td class="center">20</td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center" colspan="2">0</td>
+              <td class="center">A</td>
+              <td class="center">A</td>
+              <td class="center"></td>
+              <td class="center" colspan="4"></td>
+            </tr>
+            <tr>
+              <td class="center bold bg-gray">7</td>
+              <td style="padding: 0;">
+                <div class="d-flex content-codigo">
+                  <div class="center solid">D</div>
+                  <div class="center solid">N</div>
+                  <div class="center solid">I</div>
+                  <div class="center solid"></div>
+                  <div class="center solid"></div>
+                  <div class="center solid"></div>
+                  <div class="center solid">6</div>
+                  <div class="center solid">2</div>
+                  <div class="center solid">3</div>
+                  <div class="center solid">3</div>
+                  <div class="center solid">3</div>
+                  <div class="center solid">9</div>
+                  <div class="center solid">7</div>
+                  <div class="center solid">0</div>
+                </div>
+              </td>
+              <td colspan="5">CHIRRI JULCA, Pablo Sebastian</td>
+              <td class="center">H</td>
+              <td class="center">13</td>
+              <td class="center">13</td>
+              <td class="center">15</td>
+              <td class="center">12</td>
+              <td class="center">16</td>
+              <td class="center">14</td>
+              <td class="center">17</td>
+              <td class="center">18</td>
+              <td class="center">14</td>
+              <td class="center">14</td>
+              <td class="center">20</td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center" colspan="2">0</td>
+              <td class="center">A</td>
+              <td class="center">A</td>
+              <td class="center"></td>
+              <td class="center" colspan="4"></td>
+            </tr>
+            <tr>
+              <td class="center bold bg-gray">8</td>
+              <td style="padding: 0;">
+                <div class="d-flex content-codigo">
+                  <div class="center solid">D</div>
+                  <div class="center solid">N</div>
+                  <div class="center solid">I</div>
+                  <div class="center solid"></div>
+                  <div class="center solid"></div>
+                  <div class="center solid"></div>
+                  <div class="center solid">6</div>
+                  <div class="center solid">2</div>
+                  <div class="center solid">3</div>
+                  <div class="center solid">3</div>
+                  <div class="center solid">3</div>
+                  <div class="center solid">9</div>
+                  <div class="center solid">7</div>
+                  <div class="center solid">0</div>
+                </div>
+              </td>
+              <td colspan="5">CHIRRI JULCA, Pablo Sebastian</td>
+              <td class="center">H</td>
+              <td class="center">13</td>
+              <td class="center">13</td>
+              <td class="center">15</td>
+              <td class="center">12</td>
+              <td class="center">16</td>
+              <td class="center">14</td>
+              <td class="center">17</td>
+              <td class="center">18</td>
+              <td class="center">14</td>
+              <td class="center">14</td>
+              <td class="center">20</td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center" colspan="2">0</td>
+              <td class="center">A</td>
+              <td class="center">A</td>
+              <td class="center"></td>
+              <td class="center" colspan="4"></td>
+            </tr>
+            <tr>
+              <td class="center bold bg-gray">9</td>
+              <td style="padding: 0;">
+                <div class="d-flex content-codigo">
+                  <div class="center solid">D</div>
+                  <div class="center solid">N</div>
+                  <div class="center solid">I</div>
+                  <div class="center solid"></div>
+                  <div class="center solid"></div>
+                  <div class="center solid"></div>
+                  <div class="center solid">6</div>
+                  <div class="center solid">2</div>
+                  <div class="center solid">3</div>
+                  <div class="center solid">3</div>
+                  <div class="center solid">3</div>
+                  <div class="center solid">9</div>
+                  <div class="center solid">7</div>
+                  <div class="center solid">0</div>
+                </div>
+              </td>
+              <td colspan="5">CHIRRI JULCA, Pablo Sebastian</td>
+              <td class="center">H</td>
+              <td class="center">13</td>
+              <td class="center">13</td>
+              <td class="center">15</td>
+              <td class="center">12</td>
+              <td class="center">16</td>
+              <td class="center">14</td>
+              <td class="center">17</td>
+              <td class="center">18</td>
+              <td class="center">14</td>
+              <td class="center">14</td>
+              <td class="center">20</td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center" colspan="2">0</td>
+              <td class="center">A</td>
+              <td class="center">A</td>
+              <td class="center"></td>
+              <td class="center" colspan="4"></td>
+            </tr>
+            <tr>
+              <td class="center bold bg-gray">10</td>
+              <td style="padding: 0;">
+                <div class="d-flex content-codigo">
+                  <div class="center solid">D</div>
+                  <div class="center solid">N</div>
+                  <div class="center solid">I</div>
+                  <div class="center solid"></div>
+                  <div class="center solid"></div>
+                  <div class="center solid"></div>
+                  <div class="center solid">6</div>
+                  <div class="center solid">2</div>
+                  <div class="center solid">3</div>
+                  <div class="center solid">3</div>
+                  <div class="center solid">3</div>
+                  <div class="center solid">9</div>
+                  <div class="center solid">7</div>
+                  <div class="center solid">0</div>
+                </div>
+              </td>
+              <td colspan="5">CHIRRI JULCA, Pablo Sebastian</td>
+              <td class="center">H</td>
+              <td class="center">13</td>
+              <td class="center">13</td>
+              <td class="center">15</td>
+              <td class="center">12</td>
+              <td class="center">16</td>
+              <td class="center">14</td>
+              <td class="center">17</td>
+              <td class="center">18</td>
+              <td class="center">14</td>
+              <td class="center">14</td>
+              <td class="center">20</td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center" colspan="2">0</td>
+              <td class="center">A</td>
+              <td class="center">A</td>
+              <td class="center"></td>
+              <td class="center" colspan="4"></td>
+            </tr>
+            <tr>
+              <td class="center bold bg-gray">11</td>
+              <td style="padding: 0;">
+                <div class="d-flex content-codigo">
+                  <div class="center solid">D</div>
+                  <div class="center solid">N</div>
+                  <div class="center solid">I</div>
+                  <div class="center solid"></div>
+                  <div class="center solid"></div>
+                  <div class="center solid"></div>
+                  <div class="center solid">6</div>
+                  <div class="center solid">2</div>
+                  <div class="center solid">3</div>
+                  <div class="center solid">3</div>
+                  <div class="center solid">3</div>
+                  <div class="center solid">9</div>
+                  <div class="center solid">7</div>
+                  <div class="center solid">0</div>
+                </div>
+              </td>
+              <td colspan="5">CHIRRI JULCA, Pablo Sebastian</td>
+              <td class="center">H</td>
+              <td class="center">13</td>
+              <td class="center">13</td>
+              <td class="center">15</td>
+              <td class="center">12</td>
+              <td class="center">16</td>
+              <td class="center">14</td>
+              <td class="center">17</td>
+              <td class="center">18</td>
+              <td class="center">14</td>
+              <td class="center">14</td>
+              <td class="center">20</td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center" colspan="2">0</td>
+              <td class="center">A</td>
+              <td class="center">A</td>
+              <td class="center"></td>
+              <td class="center" colspan="4"></td>
+            </tr>
+            <tr>
+              <td class="center bold bg-gray">12</td>
+              <td style="padding: 0;">
+                <div class="d-flex content-codigo">
+                  <div class="center solid">D</div>
+                  <div class="center solid">N</div>
+                  <div class="center solid">I</div>
+                  <div class="center solid"></div>
+                  <div class="center solid"></div>
+                  <div class="center solid"></div>
+                  <div class="center solid">6</div>
+                  <div class="center solid">2</div>
+                  <div class="center solid">3</div>
+                  <div class="center solid">3</div>
+                  <div class="center solid">3</div>
+                  <div class="center solid">9</div>
+                  <div class="center solid">7</div>
+                  <div class="center solid">0</div>
+                </div>
+              </td>
+              <td colspan="5">CHIRRI JULCA, Pablo Sebastian</td>
+              <td class="center">H</td>
+              <td class="center">13</td>
+              <td class="center">13</td>
+              <td class="center">15</td>
+              <td class="center">12</td>
+              <td class="center">16</td>
+              <td class="center">14</td>
+              <td class="center">17</td>
+              <td class="center">18</td>
+              <td class="center">14</td>
+              <td class="center">14</td>
+              <td class="center">20</td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center" colspan="2">0</td>
+              <td class="center">A</td>
+              <td class="center">A</td>
+              <td class="center"></td>
+              <td class="center" colspan="4"></td>
+            </tr>
+            <tr>
+              <td class="center bold bg-gray">13</td>
+              <td style="padding: 0;">
+                <div class="d-flex content-codigo">
+                  <div class="center solid">D</div>
+                  <div class="center solid">N</div>
+                  <div class="center solid">I</div>
+                  <div class="center solid"></div>
+                  <div class="center solid"></div>
+                  <div class="center solid"></div>
+                  <div class="center solid">6</div>
+                  <div class="center solid">2</div>
+                  <div class="center solid">3</div>
+                  <div class="center solid">3</div>
+                  <div class="center solid">3</div>
+                  <div class="center solid">9</div>
+                  <div class="center solid">7</div>
+                  <div class="center solid">0</div>
+                </div>
+              </td>
+              <td colspan="5">CHIRRI JULCA, Pablo Sebastian</td>
+              <td class="center">H</td>
+              <td class="center">13</td>
+              <td class="center">13</td>
+              <td class="center">15</td>
+              <td class="center">12</td>
+              <td class="center">16</td>
+              <td class="center">14</td>
+              <td class="center">17</td>
+              <td class="center">18</td>
+              <td class="center">14</td>
+              <td class="center">14</td>
+              <td class="center">20</td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center" colspan="2">0</td>
+              <td class="center">A</td>
+              <td class="center">A</td>
+              <td class="center"></td>
+              <td class="center" colspan="4"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="content-info mt-20">
+        <div class="info">
+          <ul>
+            <li>
+              <div>(1) Lorem ipsum dolor sit amet consectetur</div>
+            </li>
+            <li>
+              <div>(2) Lorem ipsum dolor sit amet consectetur</div>
+            </li>
+            <li>
+              <div class="label">(3) Lorem ipsum</div>
+              <span>:</span>
+              <div class="data">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+            </li>
+            <li>
+              <div class="label">(4) Lorem ipsum</div>
+              <span>:</span>
+              <div class="data">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+            </li>
+            <li>
+              <div class="label">(5) Lorem ipsum</div>
+              <span>:</span>
+              <div class="data">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+            </li>
+            <li>
+              <div class="label">(6) Lorem ipsum</div>
+              <span>:</span>
+              <div class="data">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+            </li>
+            <li>
+              <div class="label">(7) Lorem ipsum</div>
+              <span>:</span>
+              <div class="data">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+            </li>
+            <li>
+              <div class="label">(8) Lorem ipsum</div>
+              <span>:</span>
+              <div class="data">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+            </li>
+            <li>
+              <div class="label">(9) Lorem ipsum</div>
+              <span>:</span>
+              <div class="data">Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <div class="label">(10) Lorem ipsum</div>
+              <span>:</span>
+              <div class="data">Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+            </li>
+            <li>
+              <div class="label">(11) Lorem ipsum</div>
+              <span>:</span>
+              <div class="data">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+            </li>
+            <li>
+              <div class="label">(12) Lorem ipsum</div>
+              <span>:</span>
+              <div class="data">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+            </li>
+            <li>
+              <div class="label">(13) Lorem ipsum</div>
+              <span>:</span>
+              <div class="data">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+            </li>
+            <li>
+              <div class="label">(14) Lorem ipsum</div>
+              <span>:</span>
+              <div class="data">Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+            </li>
+            <li>
+              <div class="label">(15) Lorem ipsum</div>
+              <span>:</span>
+              <div class="data">Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+            </li>
+          </ul>
+        </div>
+        <div class="table">
+          <table>
+            <tbody>
+              <tr>
+                <td class="center" colspan="2">TABLA 1</td>
+              </tr>
+              <tr>
+                <td>Codigo</td>
+                <td>Especialidad Ocupacional - Modulo</td>
+              </tr>
+              <tr>
+                <td style="height: 12px;"></td>
+                <td style="height: 12px;"></td>
+              </tr>
+              <tr>
+                <td style="height: 12px;"></td>
+                <td style="height: 12px;"></td>
+              </tr>
+              <tr>
+                <td style="height: 12px;"></td>
+                <td style="height: 12px;"></td>
+              </tr>
+              <tr>
+                <td style="height: 12px;"></td>
+                <td style="height: 12px;"></td>
+              </tr>
+              <tr>
+                <td style="height: 12px;"></td>
+                <td style="height: 12px;"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
